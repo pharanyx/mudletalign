@@ -84,7 +84,7 @@ will be enough to get by and just center the txt
   options.spacerColor = options.spacerColor or "<white>"
   options.textColor = options.textColor or "<white>"--or the text
   if not options.mirror == false then options.mirror = options.mirror or true end--by default, we do want to use mirroring for the caps
-  local strippedString = str:gsub("\<%w+:?%w+\>","")
+  local strippedString = str:gsub("<%w*_?%w*:?%w*_?%w*>","")
   local strLen = string.len(strippedString)
   local leftCap = options.cap
   local rightCap = options.cap
@@ -156,7 +156,7 @@ will be enough to get by and just center the txt
   options.spacerColor = options.spacerColor or "<255,255,255>" 
   options.textColor = options.textColor or "<255,255,255>"--or the text
   if not options.mirror == false then options.mirror = options.mirror or true end--by default, we do want to use mirroring for the caps
-  local strippedString = str:gsub("\<%w+:?%w+\>","")
+  local strippedString = str:gsub("<%w*_?%w*:?%w*_?%w*>","")
   local strLen = string.len(strippedString)
   local leftCap = options.cap
   local rightCap = options.cap
@@ -228,7 +228,7 @@ will be enough to get by and just center the txt
   options.spacerColor = options.spacerColor or "|cFFFFFF" 
   options.textColor = options.textColor or "|cFFFFFF"--or the text
   if not options.mirror == false then options.mirror = options.mirror or true end--by default, we do want to use mirroring for the caps
-  local strippedString = str:gsub("\<%w+:?%w+\>","")
+  local strippedString = str:gsub("<%w*_?%w*:?%w*_?%w*>","")
   local strLen = string.len(strippedString)
   local leftCap = options.cap
   local rightCap = options.cap
